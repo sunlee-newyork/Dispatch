@@ -1,0 +1,33 @@
+<div class="header row">
+	<div class="container">
+		<div class="three columns"><h5>D.I.M.</h5></div>
+		<div class="nav nine columns u-pull-right">
+			<a class="u-pull-right" href="#intro">Intro</a>
+			<a class="u-pull-right" href="#product">Product</a>
+			<a class="u-pull-right" href="#features">Features</a>
+			<a class="u-pull-right" href="#contact">Contact</a>
+		</div>
+		<div class=""></div>
+	</div>
+</div>
+
+<div class="main" ng-controller="mainController">		    	
+
+	<div class="body">
+		<div id="banner" class="body-section banner" full-height>
+			<div class="container vertical">
+				<div class="seven columns">
+					<h3>Welcome to the Digital Wave.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="intro" class="row body-section intro" ng-include="sections.intro.url" full-height></div>
+		<div id="product" class="row body-section product" ng-include="sections.product.url" full-height></div>
+		<div id="features" class="row body-section features" ng-include="sections.features.url" full-height></div>
+		<div id="contact" class="row body-section contact" ng-include="sections.contact.url" full-height></div>		
+	</div>
+
+
+</div>

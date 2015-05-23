@@ -1,0 +1,52 @@
+body {
+	/*background-image: url(/assets/patterns/ag-square.png);*/
+	background-color: #00a4fc;
+}
+
+@font-face { 
+	font-family: 'MoonLight'; 
+	src: url('/assets/fonts/Moon/MoonLight.otf') format('opentype');
+}
+@font-face { 
+	font-family: 'MoonBold'; 
+	src: url('/assets/fonts/Moon/MoonBold.otf') format('opentype');
+}
+
+/* GLOBALS */
+.vertical {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+/* end GLOBALS */
+
+/* HEADER */
+.header {
+	position: fixed;
+	width: 100%;
+	padding-top: 2%;
+}
+.header .nav {
+	text-align: center;
+} 
+.header .nav a {
+	display: inline-block;
+	padding: 5px;
+}
+/* end HEADER */
+
+.main .body .intro,
+.main .body .features {
+	background-color: #fff;
+	color: #000;
+}
+
+.main .body .intro a,
+.main .body .intro p,
+.main .body .intro span,
+
+.main .body .features
