@@ -108,12 +108,9 @@ body {
 	text-align: center;
 	color: #fff;
 }
-.main .body .features .hero-image,
-.main .body .product .hero-image {
-	float: none;
-}
+.main .body .intro .hero-image,
 .main .body .features .hero-image {
-	background: #3c78D8;
+	float: none;
 }
 .main .body .body-section {
 	position: relative;
@@ -129,11 +126,11 @@ body {
 	/*font-size: 1.5em;*/
 }
 .main .body .intro,
-.main .body .contact {
+.main .body .features {
 	background-color: #fff;
 	color: #000;
 }
-.main .body .features {
+.main .body .product {
 	background-color: rgba(116,116,116,1);
 }
 .down-arrow {

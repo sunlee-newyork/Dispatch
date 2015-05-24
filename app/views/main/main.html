@@ -23,7 +23,7 @@
 			</div>
 			<div class="down-arrow blue"></div>
 		</div>
-		<div id="{{sct.name}}" class="row body-section {{sct.name}}" ng-include="sct.url" ng-repeat="sct in sections | orderBy:'position'" full-height></div>
+		<div id="{{sct.name}}" class="row body-section {{sct.name}}" ng-include="sct.url" ng-repeat="sct in sections | orderBy:'sct.position'" full-height><span>{{sct}}</span></div>
 	</div>
 </div>
 <!-- end MAIN -->
