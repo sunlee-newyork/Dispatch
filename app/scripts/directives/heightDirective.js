@@ -7,7 +7,6 @@ angular.module('app')
 	    replace: true,
 	    link: function(scope, elem, attrs) {
 	    	var fullHeight = window.innerHeight;
-	    	console.log(fullHeight);
 	      elem.css('height', fullHeight + 'px');
 	    }
 	  };

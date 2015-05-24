@@ -1,16 +1,22 @@
-body {
-	/*background-image: url(/assets/patterns/ag-square.png);*/
-	background-color: #00a4fc;
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	/*-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);*/
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
-@font-face { 
-	font-family: 'MoonLight'; 
-	src: url('/assets/fonts/Moon/MoonLight.otf') format('opentype');
+body {
+	background-color: #3c78D8;
 }
-@font-face { 
-	font-family: 'MoonBold'; 
-	src: url('/assets/fonts/Moon/MoonBold.otf') format('opentype');
-}
+
+@font-face { font-family: 'HeroLight'; src: url('/assets/fonts/Hero/HeroLight.otf') format('opentype'); }
+@font-face { font-family: 'Hero'; src: url('/assets/fonts/Hero/Hero.otf') format('opentype'); }
 
 /* GLOBALS */
 .vertical {
@@ -28,25 +34,86 @@ body {
 .header {
 	position: fixed;
 	width: 100%;
-	padding-top: 2%;
+	padding: 2% 3% 0;  
+  z-index: 2;
+  font-size: 1.3em;
+  box-sizing: border-box;
+}
+.header .logo {
+	font-family: 'Hero';
+}
+.header .logo:hover {
+	cursor: pointer;
 }
 .header .nav {
 	text-align: center;
+	font-size: .7em;
+	line-height: 1;
 } 
 .header .nav a {
 	display: inline-block;
-	padding: 5px;
+	margin: 0 10px;
+	padding: 25px 0 30px;
+	border-bottom: 0 solid white;
+}
+.header .nav a:hover {
+	padding: 25px 0 15px;
+	font-family: 'Hero';
+	border-bottom: 1px solid white;
+}
+.header.solid {
+	background-color: #323232;
 }
 /* end HEADER */
 
+/* MAIN */
+.main .body .body-section {
+	position: relative;
+}
 .main .body .intro,
-.main .body .features {
+.main .body .contact {
 	background-color: #fff;
 	color: #000;
 }
 
-.main .body .intro a,
-.main .body .intro p,
-.main .body .intro span,
+.main .body .features {
+	background-color: rgba(116,116,116,1);
+}
+.down-arrow {
+	position: absolute;
+	bottom: -40px;
+	left: 25%;
+	width: 0; 
+	height: 0; 
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;	
+	z-index: 1;
+}
+.down-arrow.right {
+	left: 65%;
+}
+.down-arrow.blue {
+	border-top: 40px solid #3c78D8;
+}
+.down-arrow.grey {
+	border-top: 40px solid rgba(116,116,116,1);
+}
+.down-arrow.white {
+	border-top: 40px solid #fff;
+}
+/* end MAIN */
 
-.main .body .features
+/* FOOTER */
+.footer {
+	padding: 3% 3% 2%;
+	background-color: #323232;
+	font-size: .7em;
+	text-align: right;
+}
+.footer h6 {
+	font-size: 1.3em;
+}
+.footer li {
+	list-style-type: none;
+}
+/* end FOOTER */

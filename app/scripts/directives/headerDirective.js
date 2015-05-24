@@ -1,17 +1,17 @@
 'use strict';
 
 angular.module('app')
-	.directive('header', function ($window) {
+	.directive('headerPosition', function ($window) {
 	  return {
 	    scope: {
-	      scroll: '=scrollPosition'
+	      scroll: '=headerPosition'
 	    },
 	    link: function(scope, element, attrs) {
-	      var windowElement = angular.element($window);
+	      var windowEl = angular.element($window);
 	      var handler = function() {
-	        scope.scroll = windowElement.scrollTop();
+	        scope.scroll = document.body.scrollTop;
 	      }
-	      windowElement.on('scroll', scope.$apply.bind(scope, handler));
+	      windowEl.on('scroll', scope.$apply.bind(scope, handler));
 	      handler();
 	    }
 	  };

@@ -1,33 +1,57 @@
-<div class="header row">
-	<div class="container">
-		<div class="three columns"><h5>D.I.M.</h5></div>
-		<div class="nav nine columns u-pull-right">
-			<a class="u-pull-right" href="#intro">Intro</a>
-			<a class="u-pull-right" href="#product">Product</a>
-			<a class="u-pull-right" href="#features">Features</a>
-			<a class="u-pull-right" href="#contact">Contact</a>
-		</div>
-		<div class=""></div>
+<div class="header row" ng-class="{solid: scroll > 300}" header-position="scroll">
+	<div class="three columns">
+		<div class="logo" scroll-top><h1>DIM</h1></div>
+	</div>
+	<div class="nav nine columns u-pull-right" du-scroll-container="body">				
+		<a class="nav-link u-pull-right" href="#{{sct.name}}" ng-animate="animate" ng-repeat="sct in sections" du-smooth-scroll du-scrollspy>{{sct.name}}</a>
 	</div>
 </div>
 
 <div class="main" ng-controller="mainController">		    	
 
-	<div class="body">
+	<div id="body" class="body">
 		<div id="banner" class="body-section banner" full-height>
 			<div class="container vertical">
 				<div class="seven columns">
-					<h3>Welcome to the Digital Wave.</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<h2>The Key To Enterprise</h2>
+					<p>. . . is a digital, cloud solution for 100% visibility and control over all branches .</p>
 				</div>
 			</div>
+			<div class="down-arrow blue"></div>
 		</div>
 
-		<div id="intro" class="row body-section intro" ng-include="sections.intro.url" full-height></div>
-		<div id="product" class="row body-section product" ng-include="sections.product.url" full-height></div>
-		<div id="features" class="row body-section features" ng-include="sections.features.url" full-height></div>
-		<div id="contact" class="row body-section contact" ng-include="sections.contact.url" full-height></div>		
+		<div id="{{sct.name}}" class="row body-section {{sct.name}}" ng-include="sct.url" ng-repeat="sct in sections | orderBy:'position'" full-height></div>
+
 	</div>
 
+</div>
 
+<div class="footer row">
+	<div class="two columns u-pull-right">
+		<h6>About Us</h6>
+		<ul>
+			<li>Location</li>
+			<li>Contact</li>
+			<li>Terms of Service</li>
+			<li>Privacy Policy</li>
+		</ul>
+	</div>
+	<div class="two columns u-pull-right">
+		<h6>Social</h6>
+		<ul>
+			<li>Location</li>
+			<li>Contact</li>
+			<li>Terms of Service</li>
+			<li>Privacy Policy</li>
+		</ul>
+	</div>
+	<div class="two columns u-pull-right">
+		<h6>Sitemap</h6>
+		<ul>
+			<li>Location</li>
+			<li>Contact</li>
+			<li>Terms of Service</li>
+			<li>Privacy Policy</li>
+		</ul>
+	</div>
 </div>

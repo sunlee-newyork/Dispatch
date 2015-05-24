@@ -2,8 +2,9 @@
 
 angular.module('app', [
 		'ngSanitize',
-		// 'ngAnimate',
-		'ngRoute'
+		'ngAnimate',
+		'ngRoute',
+		'duScroll'
 	])
 
 	.config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
