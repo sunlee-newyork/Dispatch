@@ -8,8 +8,8 @@ angular.module('app')
       link: function(scope, elem) {
         elem.bind('click', function () {
           console.log($document);
-          angular.element(document.body).animate({scrollTop: 0}, "slow");
-
+          // angular.element(document.body).animate({scrollTop: 0}, "slow");
+          document.body.scrollTop = 0;
           // $document.scrollTopAnimated(400).then(function() {
           //   console && console.log('You just scrolled to the top!');
           // });  
