@@ -1,14 +1,16 @@
-<div class="header row" ng-class="{solid: scroll > 300}" header-position="scroll">
+<!-- HEADER -->
+<div class="header row" ng-class="{solid: scroll > 300}" scroll-position="scroll">
 	<div class="three columns">
-		<div class="logo" scroll-top><h1>DIM</h1></div>
+		<div class="logo" du-smooth-scroll scroll-top><h1>DIM</h1></div>
 	</div>
-	<div class="nav nine columns u-pull-right" du-scroll-container="body">				
-		<a class="nav-link u-pull-right" href="#{{sct.name}}" ng-animate="animate" ng-repeat="sct in sections" du-smooth-scroll du-scrollspy>{{sct.name}}</a>
+	<div class="nav nine columns u-pull-right">				
+		<a class="nav-link u-pull-right" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: '-position'" du-smooth-scroll>{{sct.name}}</a>
 	</div>
 </div>
+<!-- end HEADER -->
 
+<!-- MAIN -->
 <div class="main" ng-controller="mainController">		    	
-
 	<div id="body" class="body">
 		<div id="banner" class="body-section banner" full-height>
 			<div class="container vertical">
@@ -19,13 +21,12 @@
 			</div>
 			<div class="down-arrow blue"></div>
 		</div>
-
 		<div id="{{sct.name}}" class="row body-section {{sct.name}}" ng-include="sct.url" ng-repeat="sct in sections | orderBy:'position'" full-height></div>
-
 	</div>
-
 </div>
+<!-- end MAIN -->
 
+<!-- FOOTER -->
 <div class="footer row">
 	<div class="two columns u-pull-right">
 		<h6>About Us</h6>
@@ -55,3 +56,4 @@
 		</ul>
 	</div>
 </div>
+<!-- end FOOTER -->

@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('app')
-	.directive('headerPosition', function ($window) {
+	.directive('scrollPosition', function ($window) {
 	  return {
 	    scope: {
-	      scroll: '=headerPosition'
+	      scroll: '=scrollPosition'
 	    },
 	    link: function(scope, element, attrs) {
 	      var windowEl = angular.element($window);

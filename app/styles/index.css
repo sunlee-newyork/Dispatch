@@ -30,6 +30,22 @@ body {
 }
 /* end GLOBALS */
 
+/* VIEW */
+.app.ng-enter {
+	opacity: 0;
+}
+.app.ng-leave {
+	/*-webkit-transition: opacity 5s ease-out;
+	transition: opacity 5s ease-out;*/
+}
+.app.ng-enter.ng-enter-active {
+	opacity: 1;
+}
+.app.ng-leave.ng-leave-active {
+	opacity: 0;
+}
+/* end VIEW */
+
 /* HEADER */
 .header {
 	position: fixed;
