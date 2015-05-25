@@ -8,7 +8,7 @@ angular.module('app')
 	    link: function(scope, elem, attrs) {
 	    	$interval(function() {
 					elem.css('display', 'block');
-				}, 2000, 0);
+				}, 1000, 0);
 	    }
 	  };
 	});

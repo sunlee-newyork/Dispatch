@@ -25,7 +25,7 @@ angular.module('app', [
 
 	.config(function (snapRemoteProvider) {
 		snapRemoteProvider.globalOptions = {
-    	minPosition: -200,
+    	minPosition: -180,
     	disable: 'left', 
     	touchToDrag: false
     };

@@ -38,16 +38,21 @@ body {
 	position: fixed;
 	display: none;
 	width: 100%;
-	background: #111;
+	background: #323232;
 	z-index: 1;
 }
-.snap-drawer {
-	padding: 10%;
+.snap-drawer .nav {
+	padding: 10% 5%;
+	background: #111;
 }
 .snap-drawer .nav-link {
 	display: block;
+	font-size: 2.5rem;
 	text-align: right;
 	text-transform: uppercase;
+}
+.snap-drawer .footer {
+	padding: 5%;
 }
 .snap-content {
 	position: absolute;
@@ -199,6 +204,13 @@ body {
 .main .body .product {
 	background-color: rgba(116,116,116,1);
 }
+.main .body .contact .contact-methods .columns {
+	width: 48% !important;
+	margin-left: 4%;
+}
+.main .body .contact .contact-methods .columns:first-child {
+	margin-left: 0;
+}
 .down-arrow {
 	position: absolute;
 	bottom: -40px;
@@ -234,8 +246,7 @@ body {
 
 /* FOOTER */
 .footer {
-	padding: 3% 3% 2%;
-	background-color: #323232;
+	padding: 3% 3% 2%;	
 	font-size: .7em;
 	text-align: right;
 }
@@ -244,5 +255,13 @@ body {
 }
 .footer li {
 	list-style-type: none;
+}
+.view .footer {
+	background-color: #323232;
+}
+@media only screen and (max-width: 749px) {
+	.view .footer {
+		display: none;
+	}
 }
 /* end FOOTER */

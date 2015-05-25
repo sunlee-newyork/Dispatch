@@ -24,7 +24,28 @@
 
 		<div snap-drawers full-height timer>
 			<div snap-drawer="right">
-				<a class="nav-link" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: 'position'" du-smooth-scroll>{{sct.name}}</a>
+				<div class="nav row">
+					<a class="nav-link" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: 'position'" du-smooth-scroll>{{sct.name}}</a>
+				</div>				
+				<!-- FOOTER -->
+				<div class="footer row">
+					<div class="footer-links u-full-width">
+						<ul>
+							<li>Location</li>
+							<li>Terms of Service</li>
+							<li>Privacy Policy</li>
+						</ul>
+					</div>
+					<div class="footer-social u-full-width">
+						<h5>Social</h5>
+						<ul>
+							<li>Facebook</li>
+							<li>Instagram</li>
+							<li>Twitter</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end FOOTER -->
 			</div>			
 		</div>
 
