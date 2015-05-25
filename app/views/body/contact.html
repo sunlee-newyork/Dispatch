@@ -2,12 +2,34 @@
 <div class="container vertical">
 
 	<div class="six columns">
-		<h3>This Is The Contact</h3>
+		<h3></h3>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 	</div>
 
-	<div class="six columns">
-		<div class="hero-image"><span class="vertical">Image Placeholder</span></div>
+	<div class="contact-form six columns">
+		<form>
+		  <div class="row">
+		    <div class="six columns">
+		      <label for="exampleEmailInput">Your Contact</label>
+		      <input class="u-full-width" type="email" placeholder="email@email.com" id="exampleEmailInput">
+		    </div>
+		    <div class="six columns">
+		      <label for="exampleRecipientInput">Your Reason</label>
+		      <select class="u-full-width" id="exampleRecipientInput">
+		        <option value="Option 1">Questions</option>
+		        <option value="Option 2">Price Quote</option>
+		        <option value="Option 3">Partnership</option>
+		      </select>
+		    </div>
+		  </div>
+		  <label for="exampleMessage">Your Message</label>
+		  <textarea class="u-full-width" placeholder="Ask us anything. We love open dialogue!" id="exampleMessage"></textarea>
+		  <label class="example-send-yourself-copy">
+		    <input type="checkbox">
+		    <span class="label-body">Send a copy to yourself</span>
+		  </label>
+		  <input class="button" type="submit" value="Submit">
+		</form>
 	</div>
 
 </div>

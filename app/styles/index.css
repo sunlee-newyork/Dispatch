@@ -85,6 +85,7 @@ body {
   font-size: 1.3em;
 }
 .header .logo {
+	display: block;
 	font-family: 'Hero';
 }
 .header .logo:hover {
@@ -129,7 +130,7 @@ body {
   border-right: 35px solid transparent;
   border-top: 35px solid #3c78D8;
 }
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 812px) {
 	.header {
 		padding: 3% 3% 0 4%;
 	}
@@ -173,7 +174,7 @@ body {
 	text-align: center;
 	color: #fff;
 }
-.main .body .intro .hero-image,
+.main .body .mission .hero-image,
 .main .body .features .hero-image {
 	float: none;
 }
@@ -190,7 +191,7 @@ body {
 .main .body .banner p span {
 	/*font-size: 1.5em;*/
 }
-.main .body .intro,
+.main .body .mission,
 .main .body .features {
 	background-color: #fff;
 	color: #000;

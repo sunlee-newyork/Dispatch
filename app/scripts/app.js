@@ -35,8 +35,8 @@ angular.module('app', [
 		$scope.sections = [
 			{
 				position: 1,
-				name: 'intro',
-				url: '/app/views/body/intro.html'
+				name: 'mission',
+				url: '/app/views/body/mission.html'
 			},
 			{
 				position: 2,
@@ -58,7 +58,6 @@ angular.module('app', [
 		$scope.$watch(function () {
 			return $window.innerWidth;
 		}, function (value) {
-			console.log(value);
 			$scope.windowWidth = value;
 		});
 	});
