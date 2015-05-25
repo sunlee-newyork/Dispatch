@@ -24,16 +24,14 @@ angular.module('app', [
 	})
 
 	.config(function (snapRemoteProvider) {
-		snapRemoteProvider.globalOptions = { 
-    	// resistance: 0.8,
-    	// flickThreshold: 30,
+		snapRemoteProvider.globalOptions = {
     	minPosition: -200,
     	disable: 'left', 
     	touchToDrag: false
     };
 	})
 
-	.controller('globalController', function ($scope) {
+	.controller('globalController', function ($scope, $window) {
 		$scope.sections = [
 			{
 				position: 1,
@@ -56,6 +54,13 @@ angular.module('app', [
 				url: '/app/views/body/contact.html'
 			}
 		];
+
+		$scope.$watch(function () {
+			return $window.innerWidth;
+		}, function (value) {
+			console.log(value);
+			$scope.windowWidth = value;
+		});
 	});
 
 	// .run(['$route', '$rootScope', '$location', function ($route, $rootScope, $location) {

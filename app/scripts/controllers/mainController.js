@@ -5,11 +5,4 @@ angular.module('app')
 
 		$scope.scroll = 0;
 
-		// $scope.$watch(function () {
-		// 	return $window.innerWidth;
-		// }, function (value) {
-		// 	console.log(value);
-		// 	$scope.windowWidth = value;
-		// });
-
 	});

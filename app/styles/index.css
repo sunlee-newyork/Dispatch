@@ -36,6 +36,7 @@ body {
 /* APP */
 .snap-drawers {
 	position: fixed;
+	display: none;
 	width: 100%;
 	background: #111;
 	z-index: 1;
@@ -61,6 +62,7 @@ body {
 
 /* VIEW */
 .view {
+	width: 100%;
 	background-color: #3c78D8;
 }
 .view.ng-enter {
@@ -94,11 +96,11 @@ body {
 .header .logo .logo-triangle {
   margin: 10px 0 0 10px;
   border-right: 25px solid transparent;
-  border-top: 25px solid black;
+  border-top: 25px solid #000;
 }
 .header .logo:hover .logo-triangle {
   border-right: 35px solid transparent;
-  border-top: 35px solid black;
+  border-top: 35px solid #000;
 }
 .header .nav {
 	text-align: center;
@@ -109,7 +111,7 @@ body {
 	display: inline-block;
 	margin: 0 10px;
 	padding: 25px 0 30px;
-	border-bottom: 0 solid white;
+	border-bottom: 0 solid #fff;
 	text-transform: uppercase;
 }
 .header .nav a:hover {
@@ -118,7 +120,14 @@ body {
 	border-bottom: 1px solid white;
 }
 .header.solid {
-	background-color: #383838;
+	background-color: #323232;
+}
+.header.solid .logo-triangle {
+	border-top: 25px solid #3c78D8;
+}
+.header.solid .logo:hover .logo-triangle {
+  border-right: 35px solid transparent;
+  border-top: 35px solid #3c78D8;
 }
 @media only screen and (max-width: 749px) {
 	.header {

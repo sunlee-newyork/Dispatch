@@ -22,9 +22,9 @@
 	  <div class="view" ng-view snap-content>
 	  </div>
 
-		<div snap-drawers full-height>
+		<div snap-drawers full-height timer>
 			<div snap-drawer="right">
-				<a class="nav-link" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: '-position'" du-smooth-scroll>{{sct.name}}</a>
+				<a class="nav-link" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: 'position'" du-smooth-scroll>{{sct.name}}</a>
 			</div>			
 		</div>
 
@@ -44,6 +44,6 @@
 	<script src="/app/scripts/directives/scrollPositionDirective.js"></script>
 	<script src="/app/scripts/directives/fullHeightDirective.js"></script>
 	<script src="/app/scripts/directives/scrollDirective.js"></script>
-
+	<script src="/app/scripts/directives/timerDirective.js"></script>
 
 </html>
