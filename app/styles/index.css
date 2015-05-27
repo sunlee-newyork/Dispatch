@@ -232,7 +232,7 @@ body {
   height: 500px;
 }
 .main .body .body-section {
-	min-height: 600px;
+	min-height: 500px;
 	position: relative;
 }
 .main .body .banner h2 {
@@ -291,6 +291,9 @@ body {
 	border-top: 40px solid #fff;
 }
 @media only screen and (min-width: 750px) {
+	.main .body .body-section {
+		min-height: 600px;
+	}
 	.main .body .hero-image {
 		display: block;
 		float: right;
