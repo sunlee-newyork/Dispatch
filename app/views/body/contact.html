@@ -11,29 +11,15 @@
 		  <div class="row contact-methods">
 		    <div class="six columns">
 		      <label for="exampleEmailInput">Email</label>
-		      <input class="u-full-width" type="email" placeholder="email@email.com" id="exampleEmailInput" required>
+		      <input class="u-full-width" type="email" id="exampleEmailInput" ng-model="contactForm.email" required>
 		    </div>
 		    <div class="six columns">
 		      <label for="exampleEmailInput">Number</label>
-		      <input class="u-full-width" type="email" placeholder="555-555-5555" id="exampleEmailInput">
+		      <input class="u-full-width" type="tel" id="exampleEmailInput" ng-model="contactForm.number">
 		    </div>		    
 		  </div>
-<!-- 		  <div class="row">
-		  	<div class="twelve columns">
-		      <label for="exampleRecipientInput">Reason</label>
-		      <select class="u-full-width" id="exampleRecipientInput">
-		        <option value="Option 1">Questions</option>
-		        <option value="Option 2">Price Quote</option>
-		        <option value="Option 3">Partnership</option>
-		      </select>
-		    </div>
-		  </div> -->
 		  <label for="exampleMessage">Your Message</label>
-		  <textarea class="u-full-width" placeholder="Ask us anything. We love open dialogue!" id="exampleMessage" required></textarea>
-		  <!-- <label class="example-send-yourself-copy">
-		    <input type="checkbox">
-		    <span class="label-body">Send a copy to yourself</span>
-		  </label> -->
+		  <textarea class="u-full-width" placeholder="Ask us anything. We love open dialogue!" id="exampleMessage" required ng-model="contactForm.message"></textarea>
 		  <input class="button" type="submit" value="Submit">
 		</form>
 	</div>

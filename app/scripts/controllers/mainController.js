@@ -5,4 +5,10 @@ angular.module('app')
 
 		$scope.scroll = 0;
 
+		$scope.contactForm = {
+			email: null,
+			number: null,
+			message: null
+		}
+
 	});

@@ -4,8 +4,9 @@
 		<div class="logo" scroll-top><h1 class="u-pull-left">Dispatch</h1><div class="logo-triangle u-pull-left"></div></div>
 	</div>
 	<div class="nav six columns u-pull-right">		
-		<div class="nav-toggle" snap-toggle="right"><span></span><span></span><span></span></div>		
-		<a class="nav-link u-pull-right" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: '-position'" du-smooth-scroll>{{sct.name}}</a>
+		<div class="nav-toggle" snap-toggle="right"><span></span><span></span><span></span></div>
+		<a class="nav-link u-pull-right" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: '-position'" du-smooth-scroll du-scrollspy>{{sct.name}}</a>
+		<span class="scroll-top vertical absolute u-pull-right" scroll-top></span>		
 	</div>
 </div>
 <!-- end HEADER -->

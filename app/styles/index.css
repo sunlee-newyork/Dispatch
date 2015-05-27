@@ -12,7 +12,7 @@
 }
 
 body {
-	/*background-color: #3c78D8;*/
+	background-color: #323232;
 }
 
 @font-face { font-family: 'HeroLight'; src: url('/assets/fonts/Hero/HeroLight.otf') format('opentype'); }
@@ -31,6 +31,12 @@ body {
 .vertical.absolute {
 	position: absolute;
 }
+.vertical.absolute.right {
+	right: 0;
+}
+.vertical.absolute.left {
+	left: 0;
+}
 /* end GLOBALS */
 
 /* APP */
@@ -39,7 +45,7 @@ body {
 	display: none;
 	width: 100%;
 	height: 100%;
-	background: #323232;
+	/*background: #323232;*/
 	z-index: 1;
 }
 .snap-drawer .nav {
@@ -121,13 +127,34 @@ body {
 	border-bottom: 0 solid #fff;
 	text-transform: uppercase;
 }
+.header .nav a.active,
 .header .nav a:hover {
 	padding: 25px 0 15px;
 	font-family: 'Hero';
 	border-bottom: 1px solid white;
 }
+.header .nav .scroll-top {
+	display: inline-block;
+	right: 0;
+	margin: 0 30px;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 20px solid #3c78D8;
+	opacity: 0;
+}
+.header .nav .scroll-top:hover {
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 25px solid #3c78D8;
+	cursor: pointer;
+}
 .header.solid {
 	background-color: #323232;
+	padding: 1% 70px 0 4%;
+	opacity: .9;
+}
+.header.solid .logo h1 {
+	margin-bottom: 0;
 }
 .header.solid .logo-triangle {
 	border-top: 25px solid #3c78D8;
@@ -136,7 +163,13 @@ body {
   border-right: 35px solid transparent;
   border-top: 35px solid #3c78D8;
 }
-@media only screen and (max-width: 812px) {
+.header.solid .nav {
+	line-height: .5;
+}
+.header.solid .nav .scroll-top {
+	opacity: 1;
+}
+@media only screen and (max-width: 907px) {
 	.header {
 		padding: 3% 3% 0 4%;
 	}
@@ -165,6 +198,9 @@ body {
 	.header .nav .nav-link {
 		display: none;
 	}
+	.header .nav .scroll-top {
+		display: none;
+	}
 }
 @media only screen and (min-width: 750px) {
 
@@ -184,7 +220,19 @@ body {
 .main .body .features .hero-image {
 	float: none;
 }
+.main .body .product .hero-image {
+  background: url(/assets/images/ipad_mini_white_portrait.png) no-repeat center;
+}
+.main .body .features .hero-image {
+  background: url(/assets/images/ipad_mini_black_portrait.png) no-repeat center;
+}
+.main .body .product .hero-image,
+.main .body .features .hero-image {
+	background-size: contain;
+  height: 500px;
+}
 .main .body .body-section {
+	min-height: 600px;
 	position: relative;
 }
 .main .body .banner h2 {
