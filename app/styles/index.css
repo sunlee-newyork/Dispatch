@@ -253,6 +253,14 @@ body {
 .main .body .product {
 	background-color: rgba(116,116,116,1);
 }
+.main .body .features .button {
+	color: #000;
+	border: 1px solid #000;
+}
+.main .body .features .button:hover,
+.main .body .features .button:focus {
+	color: #fff;
+}
 .main .body .contact .contact-methods .columns {
 	width: 48% !important;
 	margin-left: 4%;
