@@ -216,6 +216,25 @@ body {
 	text-align: center;
 	color: #fff;
 }
+.main .body .banner .hero-image {
+	background: url(/assets/images/globe.png) no-repeat center;
+	background-size: contain;
+}
+.main .body .banner .hero-image .image {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background: url(/assets/images/globe3.png) no-repeat center;*/
+  /*background-size: contain;*/
+  border: 50px solid rgba(50,50,50,1);;
+  border-radius: 350px;
+}
+.main .body .banner .hero-image .image .image-shadow {
+  width: 100%;
+  height: 100%;
+  border-radius: 350px;
+  box-shadow: 0 0 40px #000;
+}
 .main .body .mission .hero-image,
 .main .body .features .hero-image {
 	float: none;
@@ -231,9 +250,16 @@ body {
 	background-size: contain;
   height: 500px;
 }
+
 .main .body .body-section {
 	min-height: 500px;
 	position: relative;
+}
+.main .body .banner .five.columns {
+  position: relative;
+  /*background-color: rgba(255,255,255,1);*/
+  background-size: contain;
+  border-radius: 350px;
 }
 .main .body .banner h2 {
 	margin-bottom: 0;
@@ -298,7 +324,7 @@ body {
 		display: block;
 		float: right;
 		width: 100%;
-		height: 250px;
+		min-height: 376px;
 		background: rgba(0,0,0,1);	
 	}
 }
