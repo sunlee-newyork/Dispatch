@@ -1,5 +1,5 @@
 <!-- FEATURES -->
-<div class="container vertical" ng-controller="featuresController" ng-switch on="featureActive" ng-animate="'animate'" >
+<div class="container vertical" ng-controller="featuresController" ng-switch on="featureActive">
 	<div class="six columns">
 		<div class="hero-image"></div>
 	</div>
@@ -18,8 +18,8 @@
 				<div class="vertical" ng-switch-when="2">
 					<h3>Enterprise Core Account</h3>		
 					<ul>
-						<li>Global data assets for visual management and distribution</li>
-						<li>Instantly update all franchise location display content within seconds</li>
+						<li>Consolidated assets for management and distribution</li>
+						<li>Instantly update all franchise display content within seconds</li>
 						<li>Customize the level of control that each franchise can have</li>
 					</ul>
 				</div>
@@ -39,11 +39,10 @@
 					</ul>
 				</div>
 				<div class="vertical" ng-switch-when="5">
-					<h3>Community Ecosystem</h3>		
+					<h3>Dispatch Community</h3>		
 					<ul>
-						<li>Create an open ecosystem of dialogue among all branches</li>
-						<li>Promote direct communication and eliminate turnaround time</li>
-						<li>Consolidate all visual content assets in a single platform</li>
+						<li>Interact with all branches for an open ecosystem</li>
+						<li>Promote direct communication and zero turnaround time with direct messaging</li>
 					</ul>
 				</div>
 				<div class="vertical" ng-switch-when="6">
@@ -72,14 +71,14 @@
 
 			</div>
 			<div class="slider-nav">
-				<span ng-click="featureActive = '1'"></span>
-				<span ng-click="featureActive = '2'"></span>
-				<span ng-click="featureActive = '3'"></span>
-				<span ng-click="featureActive = '4'"></span>
-				<span ng-click="featureActive = '5'"></span>
-				<span ng-click="featureActive = '6'"></span>
-				<span ng-click="featureActive = '7'"></span>
-				<span ng-click="featureActive = '8'"></span>
+				<span ng-click="featureActive = '1'" ng-class="{active: featureActive == 1}"></span>
+				<span ng-click="featureActive = '2'" ng-class="{active: featureActive == 2}"></span>
+				<span ng-click="featureActive = '3'" ng-class="{active: featureActive == 3}"></span>
+				<span ng-click="featureActive = '4'" ng-class="{active: featureActive == 4}"></span>
+				<span ng-click="featureActive = '5'" ng-class="{active: featureActive == 5}"></span>
+				<span ng-click="featureActive = '6'" ng-class="{active: featureActive == 6}"></span>
+				<span ng-click="featureActive = '7'" ng-class="{active: featureActive == 7}"></span>
+				<span ng-click="featureActive = '8'" ng-class="{active: featureActive == 8}"></span>
 			</div>
 			<a href="" class="button">Try Demo</a>
 		</div>

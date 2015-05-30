@@ -4,7 +4,7 @@ angular.module('app')
 	.controller('featuresController', function ($scope, $timeout) {
 
 		$scope.featureActive = '1';
-		$scope.sliderInterval = '3000';
+		$scope.sliderInterval = '5000';
 
 		function getRandomInt(max){
 			return Math.floor(Math.random() * max);
@@ -51,8 +51,8 @@ angular.module('app')
 				default:
 					$scope.featureActive = "1";
 			}
-			// $timeout(slide, 1500 + getRandomInt(1000) + TryParseInt($scope.sliderInterval, 1000));	  	  
+			$timeout(slide, 1500 + getRandomInt(1000) + TryParseInt($scope.sliderInterval, 1000));	  	  
 		}		
-		// $timeout(slide, 1500 + getRandomInt(1000) + TryParseInt($scope.sliderInterval, 1000));
+		$timeout(slide, 1500 + getRandomInt(1000) + TryParseInt($scope.sliderInterval, 1000));
 
 	});
