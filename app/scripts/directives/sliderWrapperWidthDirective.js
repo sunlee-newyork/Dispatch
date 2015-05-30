@@ -1,12 +1,13 @@
 'use strict';
 
 angular.module('app')
-	.directive('widthHeight', function () {
+	.directive('sliderWrapperWidth', function () {
     return {
 	    restrict: 'AE',
 	    replace: true,
 	    link: function(scope, elem, attrs) {
-	      elem.css('height', elem[0].clientWidth + 'px');
+	    	console.log(elem);  // angular.element instance
+				console.log(elem.children().length);
 	    }
 	  };
 	});
