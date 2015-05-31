@@ -1,14 +1,15 @@
 'use strict';
 
 angular.module('app')
-	.directive('timer', function ($interval) {
+	.directive('timer', function ($timeout) {
     return {
 	    restrict: 'AE',
 	    replace: true,
 	    link: function(scope, elem, attrs) {
-	    	$interval(function() {
+	    	$timeout(function() {
 					elem.css('display', 'block');
-				}, 1000, 0);
+					console.log("Timer directive");
+				}, 3000);
 	    }
 	  };
 	});

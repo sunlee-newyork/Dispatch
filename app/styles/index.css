@@ -17,6 +17,9 @@ body {
 @font-face { font-family: 'Hero'; src: url('/assets/fonts/Hero/Hero.otf') format('opentype'); }
 
 /* GLOBALS */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 .vertical {
 	position: relative;
 	top: 50%;
@@ -349,7 +352,7 @@ body {
 .features .slider-item ul li {
   list-style-type: none;
   padding-left: 25px;
-  background: url(/assets/images/list_bullet.svg) no-repeat 0 3px;
+  background: url(/assets/images/list_bullet.png) no-repeat 0 3px;
   background-size: 13px;
 }
 .features .slider-wrapper > div {

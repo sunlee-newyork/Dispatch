@@ -24,7 +24,7 @@
 	  <div class="view" ng-view snap-content>
 	  </div>
 
-		<div snap-drawers full-height timer>
+		<div snap-drawers full-height timer ng-cloak>
 			<div snap-drawer="right">
 				<div class="nav row">
 					<a class="nav-link" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: 'position'" du-smooth-scroll>{{sct.name}}</a>
