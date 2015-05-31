@@ -1,21 +1,21 @@
 <!-- FEATURES -->
-<div class="container vertical" ng-controller="featuresController" ng-switch on="featureActive">
+<div class="container vertical" ng-controller="featuresController" ng-switch on="featureActive" trigger-slider="scrollTop">
 	<div class="six columns">
 		<div class="hero-image"></div>
 	</div>
 
-	<div class="six columns vertical absolute right u-pull-right">
+	<div class="six columns vertical absolute right u-pull-right" ng-class="{'vertical absolute right': windowWidth > 750}">
 		
 		<div class="slider-container">
-			<div class="slider-wrapper" slider-wrapper-width>
+			<div class="slider-wrapper" slider-wrapper-width="containerWidth">
 
-				<div class="vertical" ng-switch-when="1">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="1">
 					<h3>Powerful Features</h3>		
 					<p>Dispatch targets every visual display management and deployment issue faced by a large enterprise body.</p> 
 					<p>Whether it's 10 or 400 locations, the solution is the same - keep content in the cloud for scalability, and let Dispatch take care of the rest.</p>
 				</div>
 
-				<div class="vertical" ng-switch-when="2">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="2">
 					<h3>Enterprise Core Account</h3>		
 					<ul>
 						<li>Consolidated assets for management and distribution</li>
@@ -23,7 +23,7 @@
 						<li>Customize the level of control that each franchise can have</li>
 					</ul>
 				</div>
-				<div class="vertical" ng-switch-when="3">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="3">
 					<h3>Franchise Network Accounts</h3>		
 					<ul>
 						<li>Create and maintain branch accounts</li>
@@ -31,21 +31,21 @@
 						<li>Eliminate turnaround time and delayed communications</li>
 					</ul>
 				</div>
-				<div class="vertical" ng-switch-when="4">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="4">
 					<h3>Realtime Updates</h3>		
 					<ul>
 						<li>All visual assets are pushed and powered by a central cloud network</li>
 						<li>Update a single, multiple, or all location displays</li>
 					</ul>
 				</div>
-				<div class="vertical" ng-switch-when="5">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="5">
 					<h3>Dispatch Community</h3>		
 					<ul>
 						<li>Interact with all branches for an open ecosystem</li>
 						<li>Promote direct communication and zero turnaround time with direct messaging</li>
 					</ul>
 				</div>
-				<div class="vertical" ng-switch-when="6">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="6">
 					<h3>Hardware Bundle</h3>		
 					<ul>
 						<li>All physical units are conveniently packaged and shipped straight to each location</li>
@@ -53,14 +53,14 @@
 						<li>Modular pricing for only the parts you need</li>
 					</ul>
 				</div>
-				<div class="vertical" ng-switch-when="7">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="7">
 					<h3>Lightweight Processor</h3>		
 					<ul>
 						<li>Each panel is powered by wallet-sized machine</li>
 						<li>1-step plugin-and-display deployment</li>
 					</ul>
 				</div>
-				<div class="vertical" ng-switch-when="8">
+				<div class="slider-item vertical" ng-style="sliderItemsWidth" ng-switch-when="8">
 					<h3>Reinforcement Protocol</h3>		
 					<ul>
 						<li>Duplicate OS system on a second microSD chip</li>

@@ -246,7 +246,7 @@ body {
 }
 
 .main .body .body-section {
-	min-height: 500px;
+	min-height: 600px;
 	position: relative;
 }
 .main .body .banner .five.columns {
@@ -258,7 +258,7 @@ body {
 	margin-bottom: 0;
 }
 .main .body .banner p {
-	margin-bottom: 5.5rem;
+	margin: 2rem 0 5.5rem;
 	text-transform: none;
 }
 .main .body .mission,
@@ -317,6 +317,9 @@ body {
 		min-height: 376px;
 		background: rgba(0,0,0,1);	
 	}
+	.main .body .banner p {
+		margin: 0 0 5.5rem;
+	}
 	.main .body .banner .hero-image {
 		height: 100%;
 		min-height: 0;
@@ -325,7 +328,8 @@ body {
 /* FEATURES */
 .features .six.columns.right {
 	height: 100%;
-	min-height: 500px;
+  min-height: 500px;
+  /*max-height: 500px;*/
 }
 .features .slider-container {
 	width: 100%;
@@ -334,14 +338,17 @@ body {
 }
 .features .slider-wrapper {
 	position: relative;
-	width: 3680px;
-	height: 75%;
+	width: 100%;
+	height: 80%;
+}
+.features .slider-item {
+	line-height: 1.3;
 }
 .features .slider-wrapper > div {
 	position: absolute;
 	display: inline-block;
-	width: 460px;
-	max-height: 70%;
+	width: 100%;
+	height: 90%;
 }
 .features .slider-nav {
 	width: 275px;
@@ -352,7 +359,7 @@ body {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
-	margin: 0 5px;
+	margin: 0 4px;
 	background: #3c78D8;
 	border-radius: 10px;
 }
