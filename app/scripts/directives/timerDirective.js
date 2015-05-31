@@ -8,7 +8,6 @@ angular.module('app')
 	    link: function(scope, elem, attrs) {
 	    	$timeout(function() {
 					elem.css('display', 'block');
-					console.log("Timer directive");
 				}, 3000);
 	    }
 	  };

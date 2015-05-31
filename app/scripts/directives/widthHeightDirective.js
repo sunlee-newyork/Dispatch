@@ -6,8 +6,9 @@ angular.module('app')
 	    restrict: 'AE',
 	    replace: true,
 	    link: function(scope, elem, attrs) {
-	    	// console.log("Element width: ", elem[0].clientWidth);
-	      elem.css('height', elem[0].clientWidth + 'px');
+	      scope.$watch(function () {return elem[0].clientWidth}, function() {
+	      	elem.css('height', elem[0].clientWidth + 'px');
+	      });
 	    }
 	  };
 	});

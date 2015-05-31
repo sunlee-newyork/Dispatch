@@ -49,7 +49,7 @@ body {
 	z-index: 1;
 }
 .snap-drawer .nav {
-	padding: 10% 5%;
+	padding: 40px 20px;
 	background: #111;
 }
 .snap-drawer .nav-link {
@@ -59,7 +59,7 @@ body {
 	text-transform: uppercase;
 }
 .snap-drawer .footer {
-	padding: 5%;
+	padding: 40px 20px;
 }
 .snap-content {
 	position: absolute;
@@ -223,7 +223,7 @@ body {
 	position: absolute;
   width: 100%;
   height: 100%;
-  border: 50px solid rgba(50,50,50,1);;
+  border: 40px solid rgba(50,50,50,1);
   border-radius: 350px;
 }
 .main .body .banner .hero-image .image .image-shadow {
@@ -247,7 +247,6 @@ body {
 	background-size: contain;
   height: 500px;
 }
-
 .main .body .body-section {
 	min-height: 600px;
 	position: relative;
@@ -330,11 +329,15 @@ body {
 		min-height: 0;
 	}
 }
+@media only screen and (min-width: 1000px) {
+	.main .body .banner .hero-image .image {
+	  border: 50px solid rgba(50,50,50,1);
+	}
+}
 /* FEATURES */
 .features .six.columns.right {
 	height: 100%;
   min-height: 500px;
-  /*max-height: 500px;*/
 }
 .features .slider-container {
 	width: 100%;
@@ -397,7 +400,6 @@ body {
 	}
 }
 /* end FEATURES */
-
 /* end MAIN */
 
 /* FOOTER */
