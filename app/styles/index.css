@@ -273,7 +273,6 @@ body {
 	color: #000;
 	border: 1px solid #000;
 }
-.main .body .features .button:hover,
 .main .body .features .button:focus {
 	color: #fff;
 }
@@ -323,6 +322,12 @@ body {
 	.main .body .banner .hero-image {
 		height: 100%;
 		min-height: 0;
+	}
+}
+/* supposed to target desktop */
+@media screen {
+	.main .body .features .button:hover {
+		color: #fff;
 	}
 }
 /* FEATURES */
