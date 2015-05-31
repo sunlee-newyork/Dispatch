@@ -341,8 +341,11 @@ body {
 	width: 100%;
 	height: 80%;
 }
-.features .slider-item {
+.features .slider-item {	
 	line-height: 1.3;
+}
+.features .slider-item ul li {
+	list-style-image: url(/assets/images/list_bullet.png);
 }
 .features .slider-wrapper > div {
 	position: absolute;
@@ -375,6 +378,11 @@ body {
 .features .ng-leave,
 .features .ng-enter.ng-enter-active {
   opacity: 1;
+}
+@media only screen and (min-width: 750px) {
+	.features .slider-item {
+		line-height: 1.6;
+	}
 }
 /* end FEATURES */
 
