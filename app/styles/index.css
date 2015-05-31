@@ -345,7 +345,10 @@ body {
 	line-height: 1.3;
 }
 .features .slider-item ul li {
-	list-style-image: url(/assets/images/list_bullet.png);
+  list-style-type: none;
+  padding-left: 25px;
+  background: url(/assets/images/list_bullet.svg) no-repeat 0 3px;
+  background-size: 13px;
 }
 .features .slider-wrapper > div {
 	position: absolute;
@@ -382,6 +385,10 @@ body {
 @media only screen and (min-width: 750px) {
 	.features .slider-item {
 		line-height: 1.6;
+	}
+	.features .slider-item ul li {
+		background: url(/assets/images/list_bullet.svg) no-repeat 0 5px;
+		background-size: 13px;
 	}
 }
 /* end FEATURES */

@@ -4,7 +4,7 @@ angular.module('app')
 	.controller('featuresController', function ($scope, $timeout) {
 
 		$scope.featureActive = '1';
-		$scope.sliderInterval = '5000';
+		$scope.sliderInterval = '100000';
 
 		function getRandomInt(max){
 			return Math.floor(Math.random() * max);
