@@ -395,7 +395,7 @@ body {
 		line-height: 1.6;
 	}
 	.features .slider-item ul li {
-		background: url(/assets/images/list_bullet.svg) no-repeat 0 5px;
+		background: url(/assets/images/list_bullet.png) no-repeat 0 5px;
 		background-size: 13px;
 	}
 }
