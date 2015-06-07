@@ -1,9 +1,9 @@
 <!-- HEADER -->
-<div class="header row" ng-class="{solid: scroll > 150}" scroll-position="scroll">
-	<div class="six columns">
-		<div class="logo" scroll-top><h1 class="u-pull-left">Dispatch</h1><div class="logo-triangle u-pull-left"></div></div>
+<div class="header row transition" ng-class="{solid: scroll > 150}" scroll-position="scroll">
+	<div class="four columns">
+		<div class="logo" scroll-top><h1 class="u-pull-left">Dispatch</h1><div class="logo-triangle transition u-pull-left"></div></div>
 	</div>
-	<div class="nav six columns u-pull-right">		
+	<div class="nav eight columns u-pull-right">		
 		<div class="nav-toggle" snap-toggle="right"><span></span><span></span><span></span></div>
 		<a class="nav-link u-pull-right" href="#{{sct.name}}" ng-repeat="sct in sections | orderBy: '-position'" du-smooth-scroll du-scrollspy>{{sct.name}}</a>
 		<span class="scroll-top vertical absolute u-pull-right" scroll-top></span>		
@@ -19,7 +19,7 @@
 				<div class="seven columns vertical absolute left">
 					<h2>The Enterprise Nexus</h2>
 					<p>A world of visual output from a single screen.</p>
-					<a class="cta-button button" href="#features" du-smooth-scroll>Unlock</a>
+					<a class="cta-button button transition" href="#features" du-smooth-scroll>Unlock</a>
 				</div>
 				<div class="hero-image-wrapper five columns u-pull-right" width-height="imageWrapperHeight">
 					<div class="hero-image"><div class="image"><div class="image-shadow"></div></div></div>

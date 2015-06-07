@@ -5,7 +5,8 @@ angular.module('app', [
 		'ngAnimate',
 		'ngRoute',
 		'duScroll',
-		'snap'
+		'snap',
+		'rzModule'
 	])
 
   .value('duScrollDuration', 1000)
@@ -50,6 +51,11 @@ angular.module('app', [
 			},
 			{
 				position: 4,
+				name: 'pricing',
+				url: '/app/views/body/pricing.html'
+			},
+			{
+				position: 5,
 				name: 'contact',
 				url: '/app/views/body/contact.html'
 			}
