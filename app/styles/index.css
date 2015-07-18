@@ -211,6 +211,8 @@ body {
 /* MAIN */
 .main .body .hero-image-wrapper {
   display: none;
+  height: 0;
+  padding-bottom: 39.3333333333%;
 }
 .main .body .hero-image span {
 	display: block;
@@ -256,7 +258,6 @@ body {
 .main .body .banner .five.columns {
   position: relative;
   background-size: contain;
-  border-radius: 350px;
 }
 .main .body .banner h2 {
 	margin-bottom: 0;
@@ -327,7 +328,7 @@ body {
 		margin: 0 0 5.5rem;
 	}
 	.main .body .banner .hero-image {
-		height: 100%;
+		padding-bottom: 100%;
 		min-height: 0;
 	}
 }
@@ -404,16 +405,44 @@ body {
 /* end FEATURES */
 
 /* PRICING */
+.pricing .title {
+	margin: 2rem 0 1rem;
+	font-weight: 900;
+}
+.pricing .price-options {
+
+}
 .pricing .price-options-top .row .label {
   display: inline-block;
   width: 100px;
 }
 .pricing .price-options-top .row .number {
-	/*display: inline-block;*/
 	margin: 0 0 0 10px;
 }
-.pricing .title {
-	margin: 2rem 0 1rem;
+.pricing .price-box {
+	width: 50%;
+	margin-left: 0;
+	/*background: #fff;*/
+}
+.pricing .price-box-table {
+	margin: 0 auto;
+	font-weight: 900;
+}
+.pricing .price-box-table tr th:first-child {
+	text-align: right;
+	border-bottom: 0;
+}
+.pricing .price-box-table tr td {
+  color: #00FFBB;  
+  font-size: 2.5rem;
+	text-align: center;
+	background-color: #323232;
+}
+.pricing .price-box-table tr td:last-child {
+	border-left: 1px solid #E1E1E1;
+}
+.pricing .price-box-table tr:last-child td {
+  border-top: 1px solid #E1E1E1;
 }
 /**
  * Angular JS slider directive
@@ -498,7 +527,8 @@ rzslider span.rz-pointer:hover:after {
 }
 
 rzslider span.rz-pointer.rz-active:after {
-  background-color: rgba(116,116,116,1);
+  /*background-color: rgba(116,116,116,1);*/
+  background-color: #000;
 }
 
 rzslider span.rz-bubble {
