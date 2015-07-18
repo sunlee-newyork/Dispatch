@@ -31,9 +31,8 @@
 					<input type="checkbox" ng-true-value="600" ng-false-value="0" ng-model="selections.installation">Hardware Installation Services<br>
 					<input type="checkbox" ng-true-value="200" ng-false-value="0" ng-model="selections.backup">Backup Solutions<br>
 					<select>
-						<option value="">Display Mount Type</option>
-					  <option value="wall" ng-true-value="500" ng-false-value="0" ng-model="selections.wall">Wall</option>
-					  <option value="ceiling" ng-true-value="700" ng-false-value="0" ng-model="selections.ceiling">Ceiling</option>
+					  <option value="wall" ng-true-value="600" ng-false-value="0" ng-model="selections.installation" selected>Wall</option>
+					  <option value="ceiling" ng-true-value="800" ng-false-value="0" ng-model="selections.installation">Ceiling</option>
 					</select>
 				</div>
 			</div>
@@ -41,18 +40,28 @@
 		</form>
 	</div>
 
-	<div class="price-box six columns u-pull-right">
-		<div>
-			<span>Per Location / One-Time Fee: <span ng-bind="quote.perLocation.oneTime"></span></span>
-		</div>
-		<div>
-			<span>Per Location / Monthly Fee: <span ng-bind="quote.perLocation.monthly"></span></span>
-		</div>
-		<div>
-			<span>All Locations / One-Time Fee: <span ng-bind="quote.allLocations.oneTime"></span></span>
-		</div>
-		<div>
-			<span>All Locations / Monthly Fee: <span ng-bind="quote.allLocations.monthly"></span></span>
+	<div class="price-box six columns u-pull-right" price-height>
+
+		<table class="price-box-table">
+			<tr>
+				<th></th>
+				<th>Per Location</th>
+				<th>All Locations</th>				
+			</tr>
+			<tr>
+				<th>One-Time</th>
+				<td ng-model="quote.perLocation.oneTime">{{quote.perLocation.oneTime | currency:"$":0}}</td>
+				<td ng-model="quote.allLocations.oneTime">{{quote.allLocations.oneTime | currency:"$":0}}</td>
+			</tr>
+			<tr>
+				<th>Monthly</th>
+				<td ng-model="quote.perLocation.monthly">{{quote.perLocation.monthly | currency:"$":0}}</td>
+				<td ng-model="quote.allLocations.monthly">{{quote.allLocations.monthly | currency:"$":0}}</td>
+			</tr>
+		</table>
+
+		<div class="price-box-cta">
+
 		</div>
 	</div>
 
